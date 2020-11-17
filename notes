@@ -1,3 +1,10 @@
+Project Plan:
+1) Get data
+2) build model
+3) Train model
+4) build simple server
+5) Server recommendations via an API 
+
 Data sources?: https://cseweb.ucsd.edu/~jmcauley/datasets.html
 
 https://aws.amazon.com/blogs/machine-learning/building-a-customized-recommender-system-in-amazon-sagemaker/
