@@ -1,9 +1,15 @@
 Project Plan:
 1) Get data
+ * This may not be easily done in the way I want so maybe train several different models?
+ * Use a brute force method to split?
+    * Possible choices 
+    * -> Amazon recommendation system based on reviews
+    * -> Movie recommendation based on https://cloud.google.com/solutions/machine-learning/recommendation-system-tensorflow-overview
+    * -> Books from https://morioh.com/p/1e7fe8c39c1a
 2) build model
 3) Train model
 4) build simple server
-5) Server recommendations via an API 
+5) Server recommendations via an API
 
 Data sources?: https://cseweb.ucsd.edu/~jmcauley/datasets.html
 
