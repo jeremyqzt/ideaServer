@@ -1,6 +1,8 @@
 # Project Specific
 data
 data/*
+cleanData
+cleanData/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
