@@ -1,4 +1,5 @@
 import json
+from os import path
 
 def writeJson(fName, data):
     with open(fName, 'w') as json_file:
@@ -7,6 +8,9 @@ def writeJson(fName, data):
 def cleanUpDataset(fDir, fName):
     reviews = []
     cleanName = "cleanData"
+    if path.exists("./%s/%s" % (cleanName, fName)):
+        return
+
     with open("./%s/%s" % (fDir, fName)) as f:
         for line in f:
             reviews.append(json.loads(line))
