@@ -13,6 +13,8 @@ def cleanUpDataset(fDir, fName):
 
     with open("./%s/%s" % (fDir, fName)) as f:
         for line in f:
+            temp = json.loads(line)
+            temp['reviewText'] = temp['reviewText'].lower()
             reviews.append(json.loads(line))
         jsonReviews = { "reviews": reviews }
         writeJson("./%s/%s" % (cleanName, fName), jsonReviews)
