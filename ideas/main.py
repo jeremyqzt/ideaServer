@@ -14,7 +14,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 nltk.download('punkt')
 
 start_time = time.time()
-cleanUpDataset("data", "Electronics_5.json")
+cleanUpDataset("data", "Electronics_5.json", 500)
 print("%s data read time seconds" % (time.time() - start_time))
 
 reviewDict = {}
